@@ -422,7 +422,7 @@
       state: present
       dest: /etc/pam.d/common-password
       regexp: '^password requisite pam_cracklib.so'
-      line: "password requisite pam_cracklib.so try_first_pass retry=3 minlen=14 dcredit=-1 ucredit=-1 ocredit=-1 lcredit=-1"
+      line: "password requisite pam_cracklib.so try_first_pass retry=3 minlen=15 dcredit=-1 ucredit=-1 ocredit=-1 lcredit=-1"
   when:
       - sles12cis_rule_5_3_1
   tags:
